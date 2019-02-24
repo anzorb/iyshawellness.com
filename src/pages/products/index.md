@@ -2,7 +2,6 @@
 templateKey: 'product-page'
 path: /products
 title: Test Page
-image: /img/jumbotron.jpg
 heading: Great coffee with a conscience
 description: >-
   Holy crap this is easy

@@ -12,7 +12,7 @@ export const AboutPageTemplate = ({ title, image, content, contentComponent }) =
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-          <div
+          {/*<div
             className="full-width-image-container margin-top-0"
             style={{
               backgroundImage: `url(${
@@ -21,7 +21,7 @@ export const AboutPageTemplate = ({ title, image, content, contentComponent }) =
                   : image
               })`,
             }}
-          ></div>
+          ></div>*/}
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}

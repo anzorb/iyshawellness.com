@@ -1,6 +1,7 @@
 ---
 templateKey: about-page
 title: RESTORE & HEALLLLLL
+image:
 ---
 ## Experience a client-focused approach to therapy: gaining mobility, stability and freedom in your body. 
 As a health care professional with a unique outlook on therapeutics, Iysha provides quality rehabilitative care to her clients through somatics, movement therapy and yoga therapy.

@@ -1,19 +1,12 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About our values
+title: RESTORE & HEAL
+image: /img/jumbotron.jpg
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+## Experience a client-focused approach to therapy: gaining mobility, stability and freedom in your body. 
+As a health care professional with a unique outlook on therapeutics, Iysha provides quality rehabilitative care to her clients through somatics, movement therapy and yoga therapy.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+In a one-on-one setting, Iysha provides structured care to her clients using evidence-based approaches to physical rehabilitation. Iysha provides clients with stability and mindful strengthening exercises for muscles/muscle groups that require strength and tone, as well as specific mobility exercises for areas in the body that are stiff and lack range of motion. She specializes in lower back health, SIJ issues, overall pelvic/hip health, deep core/abdominal strengthening protocols, and general chronic pain management. In addition, Iysha has also trained in Trauma-Informed settings and helps clients who suffer from anxiety and depression through a series of self-regulation tools for the nervous system, that include breathing, meditation and movement.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
-
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+In a group setting, Iysha is committed to providing empowering and transformative therapeutic movement and yoga classes to students of all levels, creating an anatomically, mentally and emotionally healing experience.

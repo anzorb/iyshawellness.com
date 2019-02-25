@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
+image: /img/img_7659-1024x683.jpeg
 title: About Iysha
-image: /img/jumbotron.jpg
 ---
 
 ### RESTORE & HEALLLLLL

@@ -13,6 +13,7 @@
     "gatsby-plugin-react-helmet": "^3.0.4",
     "gatsby-plugin-sass": "^2.0.7",
     "gatsby-plugin-sharp": "^2.0.15",
+    "gatsby-plugin-typography": "^2.2.7",
     "gatsby-remark-copy-linked-files": "^2.0.7",
     "gatsby-remark-images": "^3.0.1",
     "gatsby-remark-relative-images": "^0.2.1",
@@ -28,8 +29,17 @@
     "react": "^16.2.0",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
+    "react-typography": "^0.16.18",
+    "typography": "^0.16.18",
+    "typography-theme-noriega": "^0.16.18",
     "uuid": "^3.2.1"
   },
+  "browserslist": [
+    "IE >= 11",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
   "keywords": [
     "gatsby"
   ],
@@ -45,6 +55,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "netlify-cms-backend-fs": "^0.3.6",
     "prettier": "^1.15.3",
     "rimraf": "^2.6.2"
   }

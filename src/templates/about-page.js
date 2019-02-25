@@ -3,25 +3,37 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Header from '../components/Header';
 
 export const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
+    <section className="is-fullwidth">
+      <Header image={image} title={title}></Header>
+      <br/>
+      <br/>
+      <section className="container">
+        <section className="columns">
+          <article className="message column is-half">
+            <div className="message-body">
+            <PageContent content={content}></PageContent>
+            </div>
+          </article>
+          <article className="message column is-half">
+            <div className="message-body">
+              <PageContent content={content}></PageContent>
+            </div>
+          </article>
+        </section>
+      </section>
+      <br/>
+      <br/>
+    </section>
+    /*<section className="section section--gradient">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-          {/*<div
-            className="full-width-image-container margin-top-0"
-            style={{
-              backgroundImage: `url(${
-                !!image.childImageSharp
-                  ? image.childImageSharp.fluid.src
-                  : image
-              })`,
-            }}
-          ></div>*/}
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
@@ -31,7 +43,7 @@ export const AboutPageTemplate = ({ title, image, content, contentComponent }) =
           </div>
         </div>
       </div>
-    </section>
+    </section>*/
   )
 }
 
@@ -43,6 +55,7 @@ AboutPageTemplate.propTypes = {
 }
 
 const AboutPage = ({ data }) => {
+  console.log(data)
   const { markdownRemark: post } = data
 
   return (

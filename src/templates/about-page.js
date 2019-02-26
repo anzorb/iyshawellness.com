@@ -5,51 +5,28 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header';
 
-export const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, image, subtitle, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="is-fullwidth">
+    <div className="is-fullwidth">
       <Header image={image} title={title}></Header>
-      <br/>
-      <br/>
-      <section className="container">
-        <section className="columns">
-          <article className="message column is-half">
-            <div className="message-body">
-            <PageContent content={content}></PageContent>
-            </div>
-          </article>
-          <article className="message column is-half">
-            <div className="message-body">
-              <PageContent content={content}></PageContent>
-            </div>
-          </article>
-        </section>
-      </section>
-      <br/>
-      <br/>
-    </section>
-    /*<section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
+      <div className="container content">
+        <h4 className="subtitle is-4 has-text-centered">{subtitle}</h4>
+        <div className="columns is-centered">
+          <div className="column">
+            <PageContent className="has-text-centered" content={content}></PageContent>
           </div>
         </div>
       </div>
-    </section>*/
+    </div>
   )
 }
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  image: PropTypes.string,
+  subtitle: PropTypes.string,
+  image: PropTypes.object,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -63,6 +40,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        subtitle={post.frontmatter.subtitle}
         image={post.frontmatter.image}
         content={post.html}
       />
@@ -82,6 +60,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        subtitle
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

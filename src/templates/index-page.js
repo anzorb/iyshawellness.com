@@ -4,14 +4,18 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import CarouselHeader from '../components/CarouselHeader'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
-  image,
-  title
+  title,
+  carousel
 }) => (
   <div className="is-fullwidth">
+    <CarouselHeader images={carousel} />
+    <br/>
+    <br/>
     {/* <Header image={image} title={title}></Header> */}
     <div className="container content">
       {/* <h4 className="subtitle is-4 has-text-centered">{subtitle}</h4> */}
@@ -25,18 +29,19 @@ export const IndexPageTemplate = ({
 )
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  // image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  carousel: PropTypes.arrayOf(PropTypes.string)
 }
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  const carousel = frontmatter.carousel.map(i => i.childImageSharp.fluid.src);
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
+        carousel={carousel}
       />
     </Layout>
   )
@@ -57,10 +62,10 @@ query IndexPageTemplate {
   markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
         title
-        image {
+        carousel {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+              src
             }
           }
         }
@@ -68,3 +73,11 @@ query IndexPageTemplate {
     }
   }
 `
+
+// image {
+//   childImageSharp {
+//     fluid(maxWidth: 2048, quality: 100) {
+//       ...GatsbyImageSharpFluid
+//     }
+//   }
+// }

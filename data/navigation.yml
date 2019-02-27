@@ -1,0 +1,8 @@
+menu:
+  - menuitem:
+      slug: /about/
+      title: About Iysha
+  - menuitem:
+      slug: /services/
+      title: Services
+logo: /img/iysha-logo-3.png

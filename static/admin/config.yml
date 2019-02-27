@@ -13,14 +13,14 @@ collections:
     editor:
       preview: false
     files:
-      - file: "data/navigation.json"
+      - file: "data/navigation.yml"
         name: "nav"
         label: "Navigation"
         fields:
           - label: "Menu"
             name: "menu"
             widget: list
-            field: {label: Image, name: image, widget: image}
+            field: {label: String, name: string, widget: string}
           - label: "Logo"
             name: "logo"
             widget: image

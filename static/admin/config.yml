@@ -7,6 +7,24 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "settings"
+    label: "Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "data/navigation.json"
+        name: "nav"
+        label: "Navigation"
+        fields:
+          - label: "Menu"
+            name: "menu"
+            widget: list
+            field: {label: Image, name: image, widget: image}
+          - label: "Logo"
+            name: "logo"
+            widget: image
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"

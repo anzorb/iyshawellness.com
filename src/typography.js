@@ -1,5 +1,5 @@
 import Typography from "typography"
-import noriega from "typography-theme-stern-grove";
+import noriega from "typography-theme-moraga";
 
 noriega.baseFontSize = '16px';
 

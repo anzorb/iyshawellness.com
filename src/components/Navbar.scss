@@ -1,0 +1,22 @@
+.ab-navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ab-navitem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	max-width: 150px;
+	padding: 20px;
+}
+
+.ab-logo {
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	flex-shrink: 0;
+}

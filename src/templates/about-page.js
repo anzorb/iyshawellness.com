@@ -12,7 +12,7 @@ export const AboutPageTemplate = ({ title, image, subtitle, content, contentComp
     <div className="is-fullwidth">
       <Header image={image} title={title}></Header>
       <div className="container content">
-        <h4 className="subtitle is-4 has-text-centered">{subtitle}</h4>
+        <h2 className="subtitle is-4 has-text-centered">{subtitle}</h2>
         <div className="columns is-centered">
           <div className="column">
             <PageContent className="has-text-centered" content={content}></PageContent>

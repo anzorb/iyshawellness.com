@@ -10,8 +10,8 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="is-size-7 has-text-centered">Iysha Wellness 2019. All Rights Reserverd.</div>
+      <footer className="container footer center-xs">
+        <div className="row">Iysha Wellness 2019. All Rights Reserverd.</div>
       </footer>
     )
   }
